@@ -1,0 +1,5 @@
+SUPABASE URL
+https://szlzrbakdgfirrspknoz.supabase.co
+
+SUPABASE KEY
+sb_publishable_HPma1c6lXeSS-sx0T2Eoog_yKxCftD7
