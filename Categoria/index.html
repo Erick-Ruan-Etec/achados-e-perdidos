@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e Perdidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Achados <span style="color:  #2b6eff;;">&</span> Perdidos</h1>
+            <p>Encontre objetos perdidos</p>
+            <a href="../Menu/menu.html">Voltar</a>
+            <button id="btnAdicionar">Adicionar item</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="titulo">
+            <h2>Objetos encontrados</h2>
+            <p>Confira os objetos que foram encontrados.</p>
+        </section>
+
+        <section class="lista-itens" id="items"> </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../Login/login.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

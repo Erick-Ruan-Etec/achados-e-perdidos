@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --bg-dark: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-header: #dbeafe;
+  --bg-button: #3b82f6;
+  --accent-cyan: #2563eb;
+  --border-light: #cbd5e1;
+  --text-main: #1e293b;
+  --blue-dark: #1e3a8a;
+  --blue-light: #eff6ff;
+  --gray: #64748b;
+  --gray-light: #f8fafc;
+}
+
+body {
+  background-image: url(Imagens/fundo2.jpg);
+}
+
+/*Div logo organização*/
+header .logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+/*Imagem lupa*/
+header .logo .lupa {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/*Texto logo*/
+header .logo p {
+  width: auto;
+  position: static;
+  left: auto;
+  text-align: center;
+  font-family: "Press Start 2P", monospace !important;
+  font-size: 42px !important;
+  font-weight: normal;
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+}
+
+.titulo1{
+  width: auto;
+  position: static;
+  left: auto;
+  text-align: center;
+  font-family: "Press Start 2P", monospace !important;
+  font-size: 15px !important;
+  font-weight: normal;
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+}
+
+.total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*Div dos botoes*/
+.botoes {
+  border: 2px solid #bfdbfe;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 60%;
+  height: 100px;
+  background-color: var(--gray-light);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-button);
+  height: 50px;
+  width: 90px;
+  margin: 9px;
+  border: #1e293b;
+  border-radius: 10px;
+  color: var(--bg-header);
+}
+.button1:hover{
+  cursor: pointer;
+}
+
+.lados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  padding: 0;
+  gap: 25px;
+}
+
+.lado2 {
+  background-color: var(--bg-card);
+  border: 2px solid #bfdbfe;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  width: 1001px;
+  height: 300px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img{
+  height: 200px;
+  width: 200px;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-height: 140px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.btn-categoria {
+  width: 100%;
+  padding: 10px 8px;
+  background-color: white;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-categoria:hover {
+  background-color: var(--azul-claro);
+  border-color: #93c5fd;
+  color: var(--blue-dark);
+  box-shadow: 0 3px 8px rgba(59, 130, 246, 0.1);
+}
+
+.contagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1,
+.item2,
+.item3{
+  margin: 20px;
+  background-color: var(--bg-button);
+  height: 90px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  color: var(--bg-dark);
+}
+
+
+.contagem div:hover,
+.botoes a:hover  {
+  transition: all 0.3s ease-in-out;
+  transform: translate(0, -10px);
+  
+}
+
+a {
+  text-decoration: none;
+}

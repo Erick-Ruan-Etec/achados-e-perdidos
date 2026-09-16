@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+ 
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 10px;
+    font-family: "DM Sans", sans-serif;
+    background-color:#cedbf8;
+}
+
+.container{
+
+position: relative;
+}
+.titulo {
+    text-align: center;
+    height: 100px;
+    width: 95vw;
+    background-image: url(imagens/fundo2.jpg);
+    
+    border-radius: 10px;
+    border: 1px solid#ffff;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+h1{
+    background-color: rgba(113, 113, 238, 0);
+    color:  #1e3a8a;
+    font-family: "Press Start 2P", monospace;
+}
+
+span{
+    font-family: "Press Start 2P", monospace;
+    background-color: #064add00;
+}
+
+strong{
+    background-color: #2563eb;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.texto{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 17%;
+    right: 50%;
+
+    padding: 5px;
+    height: auto;
+    width: 95vw;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 10px;
+    color: #64748b;
+    border: 1px solid #cbd5e1;
+}
+
+img{
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: left;
+    float: right;
+    height: 18vw;
+    width: 19vw;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+p{
+    padding: 10px;
+    text-align: justify;
+    justify-content: justify;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 235, 205, 0);}
+
+a{
+    position: absolute;
+    left: 0vw;
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: rgb(207, 207, 219);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+
+a:hover{
+    background-color:#064add;
+    color:  rgb(207, 207, 219);
+}

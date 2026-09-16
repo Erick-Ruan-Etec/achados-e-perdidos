@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #ecf1fa;
+    color: #17325c;
+}
+
+header {
+    width: 98%;
+    margin-top: 1vw;
+    margin-left: 1%;
+    border-radius: 10px;
+
+    background-image: url(Imagens/fundo2.jpg);
+    color: #1e3a8a;
+    padding: 35px 8%;
+}
+
+.header-content h1 {
+    color: #1e3a8a;
+    font-family: "Press Start 2P", monospace;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header-content p {
+    display: flex;
+    color: #1e3a8a;
+    margin-top: 6px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+a,
+#btnAdicionar {
+    background-color: #2864e8;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #dce5f3;
+}
+
+main {
+    width: 84%;
+    max-width: 1200px;
+    margin: 35px auto 60px;
+}
+
+.titulo {
+    margin-bottom: 25px;
+}
+
+.titulo h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #17325c;
+}
+
+.titulo p {
+    margin-top: 6px;
+    color: #7d8ba3;
+    font-size: 14px;
+}
+
+.lista-itens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.item {
+    background: white;
+    border: 1px solid #dce5f3;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.item:hover {
+    border-color: #2864e8;
+    transform: translateY(-3px);
+}
+
+.imagem {
+    width: 100%;
+    height: 190px;
+    background: #eaf1ff;
+    border-radius: 10px;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.informacoes {
+    padding: 16px;
+}
+
+.informacoes h3 {
+    color: #17325c;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.informacoes p {
+    color: #7d8ba3;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+.modal-conteudo {
+    position: relative;
+    width: min(850px, 95vw);
+    max-height: 90vh;
+    overflow: auto;
+    background: white;
+    padding: 15px;
+}
+
+.modal-conteudo>img {
+    display: block;
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: #2864e8;
+    color: white;
+    font-size: 25px;
+    line-height: 38px;
+    cursor: pointer;
+}
+
+.fechar-modal:hover {
+    background: #1648b7;
+}
+
+.modal-informacoes {
+    padding: 18px 5px 5px;
+}
+
+.modal-informacoes h3 {
+    color: #17325c;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.modal-informacoes p {
+    color: #7d8ba3;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+    .lista-itens {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 30px 6%;
+    }
+
+    .header-content h1 {
+        font-size: 29px;
+    }
+
+    main {
+        width: 90%;
+        margin-top: 28px;
+    }
+
+    .lista-itens {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .imagem {
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .lista-itens {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem {
+        height: 200px;
+    }
+
+    .modal {
+        padding: 10px;
+    }
+
+    .modal-conteudo {
+        padding: 8px;
+    }
+
+}
+
+
+
+/* ===== Modal ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: modalIn 0.2s ease;
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
